@@ -10,7 +10,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110422181747) do
+ActiveRecord::Schema.define(:version => 20110422183450) do
+
+  create_table "links", :force => true do |t|
+    t.string   "uri"
+    t.integer  "stream_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", :force => true do |t|
+    t.text     "comment"
+    t.integer  "stream_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "streams", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
@@ -30,5 +49,10 @@ ActiveRecord::Schema.define(:version => 20110422181747) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "users_streams", :id => false, :force => true do |t|
+    t.integer "user_id"
+    t.integer "stream_id"
+  end
 
 end
