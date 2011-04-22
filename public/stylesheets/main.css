@@ -5,6 +5,9 @@ body, html {
   font-size: 13px;
   line-height: 140%;
 }
+#logoblue { color: #003C79; }
+#plusfive { color: #001224; }
+#minusfive { color: #0066ce; }
 a {
   text-decoration: none;
   color: #003C79;
@@ -65,7 +68,7 @@ h3 { text-align: center; }
   padding: 3px 5px;
   text-decoration: none;
   width: 100%;
-  background: #6f9ac5;
+  background: #4E688b;
   color: #FFF;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -77,7 +80,7 @@ html>body #add-this li a {
   width: auto;
 }
 #add-this li a:hover {
-  background: #3b6793;
+  background: #6481A8;
   color: #333;
 }
 #feeds {
@@ -93,7 +96,7 @@ html>body #add-this li a {
 #feeds li a {
   border: 1px solid #333;
   border-bottom: none;
-  background: #6f9ac5;
+  background: #4E688b;
   padding: 3px 15px;
   /*width: 100%;*/
   color: #FFF;
@@ -107,7 +110,7 @@ html>body #feeds li a {
   width: auto;
 }
 #feeds li a:hover {
-  background: #3b6793;
+  background: #6481A8;
   color: #333;
 }
 #footer {

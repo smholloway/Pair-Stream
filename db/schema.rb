@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(:version => 20110422190414) do
   create_table "links", :force => true do |t|
     t.string   "uri"
     t.integer  "stream_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -22,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20110422190414) do
   create_table "posts", :force => true do |t|
     t.text     "comment"
     t.integer  "stream_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
