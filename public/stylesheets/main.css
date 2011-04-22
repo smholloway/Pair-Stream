@@ -1,6 +1,5 @@
 body, html {
   color: #333;
-  background: #E8E8E8;
   background: #FFF;
   font-family: helvetica,arial,sans-serif;
   font-size: 13px;
@@ -8,6 +7,7 @@ body, html {
 }
 a {
   text-decoration: none;
+  color: #003C79;
 }
 h3 { text-align: center; }
 #site {
@@ -20,7 +20,7 @@ h3 { text-align: center; }
   margin: 10px 10px 30px;
   text-align: center;
 }
-#header h1 {
+#header img {
   float: left;
 }
 #top_bar_links {
