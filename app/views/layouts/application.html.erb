@@ -11,7 +11,19 @@
   <div id="site">
     <div id="header">
       <%= image_tag 'logo.png' %>
+      <div id="top_bar_links">
+        <% if user_signed_in? %>
+        <%= link_to current_user.email, edit_user_registration_path %> |·
+        <% end %>
+        <%= link_to 'Home', root_path %> |·
+        <% if user_signed_in? %>
+        <%= link_to "Sign out", destroy_user_session_path %>
+        <% else %>
+        <%= link_to "Sign in", new_user_session_path %>
+        <% end %>
+      </div> <!-- #top_bar_links -->
     </div> <!-- #header -->
+    <div style="clear:both"></div>
 
     <div id="main">
       <div id="left">
