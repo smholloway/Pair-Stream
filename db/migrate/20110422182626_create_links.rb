@@ -3,6 +3,7 @@ class CreateLinks < ActiveRecord::Migration
     create_table :links do |t|
       t.string :uri
       t.integer :stream_id
+      t.integer :user_id
 
       t.timestamps
     end
