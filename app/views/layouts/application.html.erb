@@ -10,7 +10,7 @@
 <body>
   <div id="site">
     <div id="header">
-      <h1>PairSTREAM</h1>
+      <%= image_tag 'logo.png' %>
       <div id="top_bar_links">
         <% if user_signed_in? %>
         <%= link_to current_user.email, edit_user_registration_path %> |·
