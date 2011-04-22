@@ -20,6 +20,12 @@ h3 { text-align: center; }
   margin: 10px 10px 30px;
   text-align: center;
 }
+#header h1 {
+  float: left;
+}
+#top_bar_links {
+  float: right;
+}
 #main {
 }
 #left {
