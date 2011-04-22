@@ -1,0 +1,21 @@
+#calendarBody {background-color:#6F9AC5; margin:0;}
+#calendarBody.hidden {background-color:#adf;}
+#calendar table {background-color:#fff;border:2px solid #6F9AC5; width:140px;}
+#calendar .arrowNext {float:right;}		
+#calendar .arrowPrevious {float:left;}
+#calendar .hasNext {padding-left:18px;} 
+#calendar .hasPrevious {padding-right:18px;} 
+#calendar .monthHeader, #calendar .daysHeader {background-color:#6F9AC5;}
+#calendar .monthHeader th {color:#fff; font-size:12px; font-family:Arial, sans-serif; font-weight:bold; height:18px; line-height:18px;}
+* html #calendar .monthHeader th {line-height:20px; height:20px;}
+#calendar .daysHeader td {color:#fff; font-family:Arial, sans-serif; font-size:9px; font-weight:bold; height:16px; line-height:16px; text-align:center;}
+#calendar .days td {border-bottom:1px solid #cef; font-family:Arial, sans-serif; font-size:11px; font-weight:bold; height:15px; line-height:15px; text-align:center; width:18px;}
+#calendar .days td a {display:block; height:15px; line-height:15px; width:18px;}
+#calendar .days td a, #calendar .days td a:visited, #calendar .days td a:active {color:#6F9AC5; text-decoration:none;}
+#calendar .days td a:hover {background-color:#fff; text-decoration:underline;}
+#calendar .days td.disabled {color:#999; font-weight:normal;}
+#calendar .days td.selected a {background-color:#6F9AC5; color:#fff;}
+#calendar .days td.selected a:hover {text-decoration:underline;}
+#calendar .days td.today {border-left:1px solid #cef; border-right:1px solid #cef; font-size:12px;}
+#calendar .days td.today a {color:#000;}
+#calendar .blankRow td {border-bottom:1px solid #cef; font-family:Arial, sans-serif; font-size:11px; font-weight:bold; height:15px; line-height:15px;}
