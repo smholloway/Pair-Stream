@@ -17,3 +17,8 @@ ramie = User.create(
   :password               => 'password',
   :password_confirmation  => 'password'
 )
+
+stream = Stream.new
+stream.save
+stream.users << shayne
+stream.users << ramie
