@@ -1,0 +1,18 @@
+<%= form_for("user", :url => user_registration_path) do |f| %>
+  <p>
+  <%= f.label "first name" %> <%= f.text_field :first%><br/>
+  </p>
+  <p>
+  <%= f.label "last name" %> <%= f.text_field :last%><br/>
+  </p>
+  <p>
+  <%= f.label "email" %> <%= f.text_field :email %><br/>
+  </p>
+  <p>
+  <%= f.label "password" %> <%= f.password_field :password %><br/>
+  </p>
+  <p>
+  <%= f.label "re-enter password" %> <%= f.password_field :password_confirmation %><br/>
+  </p>
+  <%= f.submit "Sign up" %>
+<% end %>

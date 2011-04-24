@@ -24,6 +24,8 @@ h3 { text-align: center; }
   text-align: center;
 }
 #header img {
+  margin: 10px;
+  height: 30px;
   float: left;
 }
 #top_bar_links {
@@ -31,7 +33,7 @@ h3 { text-align: center; }
 }
 #main {
 }
-#left {
+#left-col {
   float: left;
   width: 140px;
 }
@@ -40,7 +42,7 @@ h3 { text-align: center; }
   width: 640px;
   margin: auto 10px;
 }
-#right {
+#right-col {
   float: left;
   width: 140px;
 }
@@ -115,8 +117,27 @@ html>body #feeds li a {
 }
 #footer {
   margin: 10px;
+  padding-top: 5px;
   text-align: center;
   border-top: 1px solid #CCC;
+}
+#welcome {
+  width: 200px;
+  margin: 50px 100px;
+  background: #FFE555;
+  padding: 10px;
+}
+#login {
+  width: 350px;
+  padding: 5px;
+  margin: 10px 50px;
+  border: 2px solid #CCC;
+}
+#login h2 {
+  text-align: center;
+  margin-top: -15px;
+  background: #FFF;
+  width: 80px;
 }
 
 .avatar {
@@ -124,4 +145,73 @@ html>body #feeds li a {
 .avatar img {
   width: 50px;
   margin: auto 45px;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+
+#login label {
+  float: left;
+  width: 120px;
+}
+#login input[type="text"], #login input[type="password"] {
+  float: left;
+  width: 224px;
+}
+#login input[type="submit"] {
+  cursor: pointer;
+  background: #4E688A;
+  text-shadow: 0px 1px 1px #333;
+  color: #FFF;
+  height: 30px;
+  line-height: 16px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-color: white;
+  padding: 0 5px;
+  float: right;
+  -moz-box-shadow: 0px 0px 5px #333;
+  -webkit-box-shadow: 0px 0px 5px #333;
+  box-shadow: 0px 0px 5px #333;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+#box {
+  vertical-align: baseline;
+  border: 2px groove #CCC;
+  border-radius: 5px;
+  background: #FFF;
+  display: inline-block;
+  height: 18px;
+  margin: 0;
+  padding: 5px;
+  clear: both;
+  width: 350px;
+}
+#box label {
+  float: left;
+  width: 80px;
+  line-height: 18px;
+  font-size: 15px;
+  color: #666;
+  padding-left: 4px;
+}
+#box input[type="text"], #box input[type="password"] {
+  width: 210px;
+  font-size: 15px;
+  height: 18px;
+  line-height: 18px;
+  float: left;
+  border: none;
+  padding: 0px;
+  outline: none;
+  border-color: #FFF;
+  background: #FFF;
 }
