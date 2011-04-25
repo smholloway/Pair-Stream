@@ -8,12 +8,16 @@
 
 shayne = User.create( 
   :email                  => 'shayne@gmail.com',
+  :first                  => 'shayne',
+  :last                   => 'czyzewski',
   :password               => 'password',
   :password_confirmation  => 'password'
 )
 
 ramie = User.create( 
   :email                  => 'ramie@gmail.com',
+  :first                  => 'ramie',
+  :last                   => 'gibson',
   :password               => 'password',
   :password_confirmation  => 'password'
 )

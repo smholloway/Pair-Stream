@@ -1,0 +1,7 @@
+<h2>Streams</h2>
+<% @streams.each do |s| %>
+  <div class="stream">
+    <%= s.users.first.email %> &rarr; <%= s.users.last.email %><br/>
+    <%= s.users.first.first %> &rarr; <%= s.users.last.first %>
+  </div>
+<% end %>

@@ -4,6 +4,8 @@ PairStream::Application.routes.draw do
 
   resources :posts
 
+  resources :streams
+
   devise_for :users
 
   root :to => "home#index"
