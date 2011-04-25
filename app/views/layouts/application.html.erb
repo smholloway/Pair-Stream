@@ -9,20 +9,7 @@
 
 <body>
   <div id="site">
-    <div id="header">
-      <a href="/"><%= image_tag 'logo.png' %></a>
-      <div id="top_bar_links">
-        <% if user_signed_in? %>
-        <%= link_to current_user.email, edit_user_registration_path %> |·
-        <% end %>
-        <%= link_to 'Home', root_path %> |·
-        <% if user_signed_in? %>
-        <%= link_to "Sign out", destroy_user_session_path %>
-        <% else %>
-        <%= link_to "Sign in", new_user_session_path %>
-        <% end %>
-      </div> <!-- #top_bar_links -->
-    </div> <!-- #header -->
+    <%= render 'shared/header' %>
     <div style="clear:both"></div>
 
     <div id="main">
@@ -30,9 +17,7 @@
       <div style="clear:both"></div>
     </div> <!-- #main -->
 
-    <div id="footer">
-      &copy; PairSTREAM. All Rights Reserved.
-    </div> <!-- #footer -->
+    <%= render 'shared/footer' %>
   </div> <!-- #site -->
 </body>
 </html>

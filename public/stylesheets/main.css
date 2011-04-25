@@ -31,6 +31,28 @@ h3 { text-align: center; }
 #top_bar_links {
   float: right;
 }
+#top_bar_links ul {
+  list-style: none;
+}
+#top_bar_links ul li {
+  float: left;
+  margin: 0 0 0 5px;
+  list-style: none;
+  display: inline;
+}
+#top_bar_links li a {
+  padding: 5px 15px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#top_bar_links li a:hover, #nav li:focus {
+  background: rgba(255,255,255,0.15);
+}
 #main {
 }
 #left-col {
