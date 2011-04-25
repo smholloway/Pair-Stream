@@ -145,14 +145,14 @@ html>body #feeds li a {
 }
 #welcome {
   width: 200px;
-  margin: 50px 100px;
+  margin: 40px 0px 50px 150px;
   background: #FFE555;
   padding: 10px;
 }
 #login {
   width: 350px;
   padding: 5px;
-  margin: 10px 50px;
+  margin: 10px 100px 10px 50px;
   border: 2px solid #CCC;
 }
 #login h2 {
