@@ -157,7 +157,7 @@ html>body #feeds li a {
 }
 #login h2 {
   text-align: center;
-  margin-top: -15px;
+  margin: -15px 0 8px;
   background: #FFF;
   width: 80px;
 }
