@@ -15,7 +15,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.xml
   def show
-    @post = Post.find(params[:id])
+    @post = Post.find(params[:stream_id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -26,7 +26,8 @@ class PostsController < ApplicationController
   # GET /posts/new
   # GET /posts/new.xml
   def new
-    @post = Post.new
+    @stream = Stream.find(params[:stream_id])
+    @post = @stream.posts.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -39,20 +40,10 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
-  # POST /posts
-  # POST /posts.xml
   def create
-    @post = Post.new(params[:post])
-
-    respond_to do |format|
-      if @post.save
-        format.html { redirect_to(@post, :notice => 'Post was successfully created.') }
-        format.xml  { render :xml => @post, :status => :created, :location => @post }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @post.errors, :status => :unprocessable_entity }
-      end
-    end
+    @stream = Stream.find(params[:stream_id])
+    @post = @stream.posts.create(params[:post])
+    redirect_to stream_path(@stream)
   end
 
   # PUT /posts/1

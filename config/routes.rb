@@ -2,9 +2,9 @@ PairStream::Application.routes.draw do
 
   resources :links
 
-  resources :posts
-
-  resources :streams
+  resources :streams do
+    resources :posts
+  end
   
   get 'home/main'
 
