@@ -5,6 +5,8 @@ PairStream::Application.routes.draw do
   resources :posts
 
   resources :streams
+  
+  get 'home/main'
 
   devise_for :users
 
