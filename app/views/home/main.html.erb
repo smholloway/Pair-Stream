@@ -1,9 +1,4 @@
 Welcome, <%= current_user.email %>!
 <br /><br />
-<h2>Streams</h2>
-<% @streams.each do |s| %>
-  <div class="stream">
-    <%= link_to s.users.first == current_user ? s.users.last.email : s.users.first.email, s %><br/>
-  </div>
-<% end %>
+<%= render :partial => "streams/streams" %>
 

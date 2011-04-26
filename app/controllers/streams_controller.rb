@@ -7,6 +7,9 @@ class StreamsController < ApplicationController
   end
 
   def show
+    @stream = Stream.find(params[:id])
+    @other_user = other_stream_user(@stream);
+    
     render :layout => 'stream'
   end
 end

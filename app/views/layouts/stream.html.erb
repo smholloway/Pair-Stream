@@ -16,7 +16,7 @@
       <div id="left-col">
         <div class="avatar">
           <%= image_tag 'shayne.jpg' %>
-          <h3>Shayne</h3>
+          <h3><%= current_user.email %></h3>
         </div>
         <div id="add-this">
           <ul>
@@ -57,7 +57,7 @@
       <div id="right-col">
         <div class="avatar">
           <%= image_tag 'ramie.jpg' %>
-          <h3>Ramie</h3>
+          <h3><%= @other_user.email %></h3>
         </div>
         <div class="tags">
           <h3>Tags</h3>

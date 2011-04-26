@@ -1,0 +1,6 @@
+<h2>Streams</h2>
+<% @streams.each do |s| %>
+  <div class="stream">
+    <%= link_to other_stream_user(s).email, s %><br/>
+  </div>
+<% end %>
