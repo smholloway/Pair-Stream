@@ -58,6 +58,7 @@ h3 { text-align: center; }
 #left-col {
   float: left;
   width: 140px;
+  overflow: hidden;
 }
 #middle {
   float: left;
@@ -67,6 +68,7 @@ h3 { text-align: center; }
 #right-col {
   float: left;
   width: 140px;
+  overflow: hidden;
 }
 #content {
   border: 1px solid #333;
