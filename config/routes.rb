@@ -1,12 +1,11 @@
 PairStream::Application.routes.draw do
 
-  resources :links
-
   resources :streams do
     resources :posts
+    resources :links
   end
-  
-  get 'home/main'
+
+  match 'home' => 'home#main', :as => :home
 
   devise_for :users
 

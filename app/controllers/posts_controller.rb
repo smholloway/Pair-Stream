@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
+  #layout 'stream'
+
   before_filter :authenticate_user!
-  
+
   # GET /posts
   # GET /posts.xml
   def index
