@@ -11,6 +11,8 @@ class HomeController < ApplicationController
     if not user_signed_in?
       redirect_to :action => 'index'
     end
+    
+    @streams = current_user.streams
   end
 
 end
