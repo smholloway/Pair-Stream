@@ -2,6 +2,7 @@
   <div class="field">
     <%= f.label :comment %><br />
     <%= f.text_area :comment %>
+    <%= f.hidden_field :user_id, { :value => current_user.id } %>
   </div>
   <div class="actions">
     <%= f.submit %>

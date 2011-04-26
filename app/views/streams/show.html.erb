@@ -1,5 +1,5 @@
 <% @posts.each do |post| %>
   <tr>
-    <td>TODO said <%= post.comment %><br /></td>
+    <td><%= get_name(post.user) %> said <%= post.comment %><br /></td>
   </tr>
 <% end %>
