@@ -1,0 +1,25 @@
+<h1>Listing pending_streams</h1>
+
+<table>
+  <tr>
+    <th>Requestor</th>
+    <th>Requestee</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pending_streams.each do |pending_stream| %>
+  <tr>
+    <td><%= pending_stream.requestor %></td>
+    <td><%= pending_stream.requestee %></td>
+    <td><%= link_to 'Show', pending_stream %></td>
+    <td><%= link_to 'Edit', edit_pending_stream_path(pending_stream) %></td>
+    <td><%= link_to 'Destroy', pending_stream, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pending stream', new_pending_stream_path %>

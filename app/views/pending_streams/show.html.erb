@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Requestor:</b>
+  <%= @pending_stream.requestor %>
+</p>
+
+<p>
+  <b>Requestee:</b>
+  <%= @pending_stream.requestee %>
+</p>
+
+
+<%= link_to 'Edit', edit_pending_stream_path(@pending_stream) %> |
+<%= link_to 'Back', pending_streams_path %>

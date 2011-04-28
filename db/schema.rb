@@ -10,12 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110424173316) do
+ActiveRecord::Schema.define(:version => 20110428194703) do
 
   create_table "links", :force => true do |t|
     t.string   "uri"
     t.integer  "stream_id"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pending_streams", :force => true do |t|
+    t.string   "requestor"
+    t.string   "requestee"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

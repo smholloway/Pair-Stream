@@ -1,5 +1,7 @@
 PairStream::Application.routes.draw do
 
+  resources :pending_streams
+
   resources :streams do
     resources :posts
     resources :links
