@@ -8,6 +8,10 @@ class StreamsController < ApplicationController
 
   def show
     @stream = Stream.find(params[:id])
+    if (!@stream.users.include?(current_user))
+      return redirect_to home_path()
+    end
+    
     @other_user = other_stream_user(@stream);
     @posts = @stream.posts
     
